@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Contact</title>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<!--fonts from google-->
+		<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" type="text/css" href="./css/main.css">
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	    <!--[if lt IE 9]>
+	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	    <![endif]-->
+	</head>
+
+	<body id="pageTop">
+		<!--Header with logo, name, and tagline-->
+		<div class="header text-center">
+			<img class="img-logo" src="./images/junco.png" alt="junco_logo">
+			<h2>Baked Batch</h2>
+			<h4>Familiar Flavors From Home</h4>
+		</div>
+
+		<div class="container-eighty">
+			<ul class="nav nav-justified">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="gallery.html">GALLERY</a></li>
+				<li><a href="products.html">PRODUCTS</a></li>
+				<li class="active"><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<br/>
+		<div class="container-fluid text-center container-adjusted">
+			<div class="row">
+				<div class="col-sm-6">
+					<img class="img-thumbnail noborder-img" src="./images/cake1-long.png" alt="JUNCO">
+				</div>
+				<div class="col-sm-6">
+					<h1>CONTACT ME</h1>
+					<br/>
+					<p>Seattle, Washington</p>
+					<p>wwaylonhuang@gmail.com</p>
+					<p>I want to hear from you!</p>
+
+					<form class="slideanim">
+						<input type="text" id="fname" name="fname" placeholder="Name">
+						<input type="text" id="lname" name="lname" placeholder="Email">
+						<input type="text" id="subject" name="subject" placeholder="Subject">
+						<textarea id="message" placeholder="Message"></textarea>
+					</form>
+				</div>
+			</div>
+			<br/>
+			<div class="container-fluid" id="googleMap" style="height:300px;width:100%;"></div>
+		</div>
+		<!--Add Google Maps*/-->
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			var myCenter = new google.maps.LatLng(47.608013, -122.335167);
+
+			function initialize() {
+			var mapProp = {
+			  center:myCenter,
+			  zoom:12,
+			  scrollwheel:false,
+			  draggable:false,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+
+			var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+			var marker = new google.maps.Marker({
+			  position:myCenter,
+			  });
+
+			marker.setMap(map);
+			}
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+		<!--Footer with information and link up-->
+		<footer class="container-fluid text-center">
+			<a href="#pageTop" title="To Top">
+				<span class="glyphicon glyphicon-chevron-up"></span>
+			</a>
+			<p>Made with <span class="glyphicon glyphicon-heart"></span> in Seattle</p> 
+		</footer>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
