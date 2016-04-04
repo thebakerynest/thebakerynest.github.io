@@ -11,6 +11,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<!--fonts from google-->
 		<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
 		<link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -45,11 +46,12 @@
 		<div class="container-fluid text-center container-adjusted">
 			<div class="row">
 				<div class="col-sm-6">
-					<img class="img-thumbnail noborder-img" src="./images/cake1-long.png" alt="JUNCO">
+					<img class="img-thumbnail noborder-img" src="./images/scake3.png" alt="JUNCO">
 				</div>
 				<div class="col-sm-6">
 					<h1>PLACE AN ORDER</h1>
-					<p><a href="https://docs.google.com/forms/d/1EYR5jPpX8UiPTZdoqKbPFTBLbCcdmU2ispP8j07yCKQ/viewform?usp=send_form" target="_blank" title="Place order in a Google Form">Order Form</a></p>
+					<br/>
+					<p><a class="order" href="https://docs.google.com/forms/d/1EYR5jPpX8UiPTZdoqKbPFTBLbCcdmU2ispP8j07yCKQ/viewform?usp=send_form" target="_blank" title="Place order in a Google Form">Order Form</a></p>
 					<br/>
 					<h1>CONTACT ME</h1>
 					<br/>
@@ -57,12 +59,14 @@
 					<p>thebakerynest@gmail.com</p>
 					<p>I want to hear from you!</p>
 
-					<form class="slideanim">
-						<input type="text" id="fname" name="fname" placeholder="Name">
-						<input type="text" id="lname" name="lname" placeholder="Email">
-						<input type="text" id="subject" name="subject" placeholder="Subject">
-						<textarea id="message" placeholder="Message"></textarea>
-					</form>
+					<!--<form method="GET" action="mailto:wwaylonhuang@gmail.com" enctype="text/plain">
+						<input type="text" id="fname" name="fname" placeholder="Name" required="required">
+						<input type="text" id="lname" name="lname" placeholder="Email" required="required">
+						<input type="text" id="subject" name="subject" placeholder="Subject" required="required">
+						<textarea id="message" placeholder="Message" required="required"></textarea>
+						<br/>
+						<input type="submit" value="Send" id="submit-button"/>
+					</form>-->
 				</div>
 			</div>
 			<br/>
@@ -97,10 +101,26 @@
 
 		<!--Footer with information and link up-->
 		<footer class="container-fluid text-center">
-			<a href="#pageTop" title="To Top">
-				<span class="glyphicon glyphicon-chevron-up"></span>
-			</a>
-			<p>Made with <span class="glyphicon glyphicon-heart"></span> in Seattle</p> 
+			<div class="row">
+				<div class="col-sm-4 text-center footer-social-icons">
+					<h4>Follow us on</h4>
+					<ul class="social-icons">
+						<li><a target="_blank" href="https://www.instagram.com/thebakerynest/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+						<li><a target="_blank" href="https://www.instagram.com/thebakerynest/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+						<li><a target="_blank" href="https://twitter.com/thebakerynest" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+						<li><a target="_blank" href="https://plus.google.com/u/0/115354890450169833981?hl=en" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 text-center">
+				</div>
+				<div class="col-sm-4 text-center">
+					<a href="#pageTop" title="To Top">
+						<span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+					<p>Made with <span class="glyphicon glyphicon-heart"></span> in Seattle</p>
+					<h4>2016 The Bakery Nest</h4>
+				</div>
+			</div>
 		</footer>
 		<script src="./js/script.js"></script>
 	</body>
