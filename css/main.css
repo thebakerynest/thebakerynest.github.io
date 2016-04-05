@@ -151,17 +151,6 @@ textarea:focus, input[type=text]:focus {
     border: 3px solid #555;
 }
 
-.order {
-  padding: 10px;
-  margin: 0px;
-  text-decoration: none;
-  font-weight: bold;
-  color: inherit;
-  text-align: center;
-  background-color: white;
-  border: 3px solid #29ABE2;
-}
-
 /*Slide Anim*/
 .slideanim {visibility:hidden;}
 .slide {
@@ -295,18 +284,4 @@ ul.social-icons {
 
 .fa-twitter:hover {
   background-color: #00aced;
-}
-
-.fa-google-plus {
-  padding: 10px 10px 7px 10px;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s;
-  background-color: #inherit;
-}
-
-.fa-google-plus:hover {
-  background-color: #e25714;
 }
