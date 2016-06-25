@@ -29,135 +29,160 @@
 	    <![endif]-->
 	</head>
 
-	<body id="pageTop">
-		<!--Header with logo, name, and tagline-->
-		<div class="header text-center">
-			<img class="img-logo" src="./images/TBNLogo.png" alt="logo">
-			<h2>The Bakery Nest</h2>
-			<h4>A palette of flavors to satisfy your sweet desire!</h4>
+	<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+		<nav class="navbar navbar-default navbar-fixed-top">
+		  <div class="container">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#myPage">The Bakery Nest</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#menu">MENU</a></li>
+		        <li><a href="#pricing">ORDER</a></li>
+		        <li><a href="#contact">CONTACT</a></li>
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+
+		<div class="jumbotron text-center">
+		  <h1>The Bakery Nest</h1>
+		  <p>A palette of flavors to satisfy your sweet desire!</p>
 		</div>
 
-		<div class="container-eighty">
-			<ul class="nav nav-justified">
-				<li class="active"><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="gallery.html">GALLERY</a></li>
-				<li><a href="products.html">MENU</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-			</ul>
-		</div>
-		<br/>
-		<div class="container container-carousel">
-			<div id="homeMainCarousel" class="carousel slide" data-ride="carousel">
-				<!--Indicators-->
-				<ol class="carousel-indicators">
-					<li data-target="#homeMainCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#homeMainCarousel" data-slide-to="1"></li>
-					<li data-target="#homeMainCarousel" data-slide-to="2"></li>
-				</ol>
-				<!--Wrapper for slides-->
-				<div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<img src="./images/cake_roll_orange.jpg" alt="cake_roll_orange" width="400" height="400">
-						<div class="carousel-caption">
-							<p>Orange Cream Cake Roll</p>
-						</div>
-					</div>
+		<!-- Container (Menu Section) -->
+		<div id="menu" class="container-fluid text-center bg-grey">
+		  <h2>Menu</h2><br>
+		  <h4>Pick from a selection of amazing baked goods!</h4>
+		  <div class="row text-center slideanim">
+		    <div class="col-sm-4">
+		      <div class="thumbnail">
+		        <img src="images/cake_roll_strawberry_new.jpg" alt="Paris" width="400" height="300">
+		        <p><strong>Castella</strong></p>
+		        <p>A beautifully crafted, sweet, fragant cake. They say simplicity is the ultimate sophistication - this cake perfectly captures that concept.</p>
+		      </div>
+		    </div>
+		    <div class="col-sm-4">
+		      <div class="thumbnail">
+		        <img src="images/cake_roll_strawberry_new.jpg" alt="New York" width="400" height="300">
+		        <p><strong>Strawberry Roll Cake</strong></p>
+		        <p>A cake of infinite variations. This one is suitable for various occassions and is delightedly delicious. Light, fluffy cake with rich cream, wrapped within.</p>
+		      </div>
+		    </div>
+		    <div class="col-sm-4">
+		      <div class="thumbnail">
+		        <img src="images/cake_roll_strawberry_new.jpg" alt="San Francisco" width="400" height="300">
+		        <p><strong>Roll Cake</strong></p>
+		        <p>A cake of infinite variations. This one is suitable for various occassions and is delightedly delicious. Light, fluffy cake with rich cream, wrapped within.</p>
+		      </div>
+		    </div>
+		  </div><br>
+		  
+		  <h2>What our customers say</h2>
+		  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+		    <!-- Indicators -->
+		    <ol class="carousel-indicators">
+		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		      <li data-target="#myCarousel" data-slide-to="1"></li>
+		      <li data-target="#myCarousel" data-slide-to="2"></li>
+		    </ol>
 
-					<div class="item">
-						<img src="./images/cake_roll_taro_full2.jpg" alt="cake_roll_taro" width="400" height="400">
-						<div class="carousel-caption">
-							<p>Taro Cream Cake Roll</p>
-						</div>
-					</div>
+		    <!-- Wrapper for slides -->
+		    <div class="carousel-inner" role="listbox">
+		      <div class="item active">
+		        <h4>"This company is the best. I am so happy with the result!"<br><span style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+		      </div>
+		      <div class="item">
+		        <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+		      </div>
+		      <div class="item">
+		        <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler Bing, Actor, FriendsAlot</span></h4>
+		      </div>
+		    </div>
 
-					<div class="item">
-						<img src="./images/cake_roll_strawberry.jpg" alt="cake_roll_strawberry" width="400" height="400">
-						<div class="carousel-caption">
-							<p>Strawberry Cream Cake Roll</p>
-						</div>
-					</div>
-				</div>
-
-				<!--Left right controls for carousel-->
-				<a class="left carousel-control" href="#homeMainCarousel" role="button" data-slide="prev">
-					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="right carousel-control" href="#homeMainCarousel" role="button" data-slide="next">
-					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>
-		<br/>
-		<div class="container-fluid text-center group-image">
-			<div class="row">
-				<div class="col-sm-4">
-					<img class="img-thumbnail border-img" src="./images/cake_roll_orange.jpg" alt="cake1">
-				</div>
-				<div class="col-sm-4">
-					<img class="img-thumbnail border-img" src="./images/cake_roll_taro_full2.jpg" alt="cake2">
-				</div>
-				<div class="col-sm-4">
-					<img class="img-thumbnail border-img" src="./images/cake_roll_strawberry.jpg" alt="cake3">
-				</div>
-			</div>
+		    <!-- Left and right controls -->
+		    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+		      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		      <span class="sr-only">Previous</span>
+		    </a>
+		    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+		      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		      <span class="sr-only">Next</span>
+		    </a>
+		  </div>
 		</div>
 
-		<br/>
-		<!--<div class="container-fluid text-center group-image">
-			<div class="row">
-				<div class="col-sm-4 text-center">
-					<img class="img-thumbnail noborder-img slideanim" src="./images/like.png" alt="JUNCO">
-					<h2>LIKE AND<br/>FOLLOW</h2>
-				</div>
-				<div class="col-sm-4 text-center">
-					<img class="img-thumbnail noborder-img slideanim" src="./images/order.png" alt="JUNCO">
-					<h2>ORDER<br/>ONLINE</h2>
-				</div>
-				<div class="col-sm-4 text-center">
-					<img class="img-thumbnail noborder-img slideanim" src="./images/visit.png" alt="JUNCO">
-					<h2>COME<br/>VISIT US</h2>
-				</div>
-			</div>
+		<!-- Container (Contact Section) -->
+		<div id="contact" class="container-fluid">
+		  <h2 class="text-center">CONTACT</h2>
+		  <div class="row">
+		    <div class="col-sm-5">
+		      <p>Send us your questions or comments!</p>
+		      <p><span class="glyphicon glyphicon-map-marker"></span> Seattle, US</p>
+		      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+		      <p><span class="glyphicon glyphicon-envelope"></span> thebakerynest@gmail.com</p>
+		    </div>
+		    <div class="col-sm-7 slideanim">
+		      <div class="row">
+		        <div class="col-sm-6 form-group">
+		          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+		        </div>
+		        <div class="col-sm-6 form-group">
+		          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+		        </div>
+		      </div>
+		      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+		      <div class="row">
+		        <div class="col-sm-12 form-group">
+		          <button class="btn btn-default pull-right" type="submit">Send</button>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
 		</div>
-		<br/>-->
 
-		<!--Footer with information and link up-->
-		<footer class="container-fluid text-center">
-			<div class="row">
-				<div class="col-sm-4 text-center footer-social-icons">
-					<h4>Follow us on</h4>
-					<ul class="social-icons">
-						<li><a target="_blank" href="https://www.facebook.com/groups/1596270667362167/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-						<li><a target="_blank" href="https://www.instagram.com/thebakerynest/" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-						<li><a target="_blank" href="https://twitter.com/thebakerynest" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-sm-4 text-center">
-				</div>
-				<div class="col-sm-4 text-center">
-					<a href="#pageTop" title="To Top">
-						<span class="glyphicon glyphicon-chevron-up"></span>
-					</a>
-					<p>Made with <span class="glyphicon glyphicon-heart"></span> in Seattle</p>
-					<h4>2016 The Bakery Nest</h4>
-				</div>
-			</div>
-		</footer>
-		
-		<script src="./js/script.js"></script>
+		<div id="googleMap" style="height:400px;width:100%;"></div>
 
+		<!-- Add Google Maps -->
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		var myCenter = new google.maps.LatLng(47.6062, -122.3321);
 
-		  ga('create', 'UA-76324358-1', 'auto');
-		  ga('send', 'pageview');
+		function initialize() {
+		var mapProp = {
+		  center:myCenter,
+		  zoom:12,
+		  scrollwheel:false,
+		  draggable:false,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
 
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+		var marker = new google.maps.Marker({
+		  position:myCenter,
+		  });
+
+		marker.setMap(map);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
+
+		<footer class="container-fluid text-center">
+		  <a href="#myPage" title="To Top">
+		    <span class="glyphicon glyphicon-chevron-up"></span>
+		  </a>
+		  <p>Made with <span class="glyphicon glyphicon-heart"></span> in Seattle</p>
+		</footer>
+
+		<script src="js/script.js"></script>
+
 	</body>
 </html>
