@@ -40,7 +40,6 @@ h4 {
 }
 /*Main carousel container, with white border, 80% size*/
 .container-carousel {
-  border: 7px solid white;
   padding: 0px;
   width: 100%;
   margin: auto;
