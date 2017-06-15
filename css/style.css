@@ -1,0 +1,14 @@
+h2 {
+  color:blue;
+  font-size: medium;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+}
+.Season {
+  color:green;
+  font-weight: bold;
+  font-family: helvetica;
+}
+.drama {
+  color:black;
+  font-style: italic;
+}
