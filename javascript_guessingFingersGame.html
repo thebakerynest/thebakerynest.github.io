@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>  
+        <title>JavaScript - GuessingfingerGame</title>
+        <style type="text/css">
+            
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <p id="guess">How many fingers am I holding up?</p>
+
+            <input type="text" id="userinput">
+            <input type="button" id="guessButton" value="Guess!">
+            <h2 id="showresult"></h2>
+            <h3 id="showcorrect"></h3>
+
+            <script type="text/javascript">
+                document.getElementById("guessButton").onclick = function(){                                       
+                    var correctNum = Math.round(Math.random()*5);
+                    
+                    console.log(correctNum);                    
+                    var result = "";
+                    
+                    if (document.getElementById("userinput").value == correctNum){                        
+
+                        result = "You got it!";
+                        
+                    } else {
+
+                        result = "Nope, try again!"                        
+                    }                    
+                    document.getElementById("showresult").innerHTML = result;
+                    document.getElementById("showresult").style.color="Blue";
+                    
+                    document.getElementById("showcorrect").innerHTML = correctNum;    
+                    
+                }
+            </script>
+        </div>
+    </body>
+</html>
